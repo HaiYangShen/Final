@@ -1,0 +1,130 @@
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gridLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="1"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.finalexam_2.MainActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_gravity="left"
+        android:text="Convert"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/numEdit"
+        android:layout_gravity="fill_horizontal"
+        android:ems="10"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <LinearLayout android:layout_gravity="fill_horizontal" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="From"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="To"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_gravity="fill_horizontal" >
+
+        <RadioButton
+            android:id="@+id/fButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/fahrenheit" />
+
+        <RadioButton
+            android:id="@+id/fButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/fahrenheit" />
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_gravity="fill_horizontal" >
+
+        <RadioButton
+            android:id="@+id/cButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/celsius" />
+
+        <RadioButton
+            android:id="@+id/cButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/celsius" />
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_gravity="fill_horizontal" >
+
+        <RadioButton
+            android:id="@+id/kButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/kelvin" />
+
+        <RadioButton
+            android:id="@+id/kButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/kelvin" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/convertButton"
+        android:layout_gravity="fill_horizontal"
+        android:text="Convert" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_gravity="fill_horizontal"
+        android:text="Reset" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/resultText"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/formulaText"
+        android:layout_gravity="center_horizontal"
+        android:text="Conversion Formula:"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/formulaDisplay"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/formulaDisplay"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+</GridLayout>
